@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  list-style: none;
+}
+.text-FEFEFE{
+  color: #FEFEFE;
+}
+.text-00FFFF{
+  color: #00FFFF;
+}
+.text-c1f3ff{
+  color:#c1f3ff;
+}
+
+.fz16{
+  font-size: 16px;
+}
+.d-inline-block{
+  display: inline-block;
+}
+.text-ffffff{
+    color: #ffffff;
+}
+.text-6cedff{
+    color: #6cedff;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 499px)
+{
+  .fz16{font-size:10px;}
+  .fz17{font-size:10px;}
+  .fz14{font-size:10px;}
+  .fz12{font-size:10px;}
+  .fz13{font-size:10px;}
+    .fz40{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1399px)
+{
+  .fz16{font-size:10px;}
+  .fz17{font-size:10px;}
+  .fz14{font-size:10px;}
+  .fz12{font-size:10px;}
+  .fz13{font-size:10px;}
+    .fz40{
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1920px)
+{
+  .fz16{font-size:16px;}
+  .fz17{font-size:17px;}
+  .fz12{font-size:12px;}
+  .fz14{font-size:14px;}
+  .fz13{font-size:13px;}
+  .fz40{
+        font-size: 40px;
+    }
+
+}
+
+i{
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'DS-DIGIT';/*自定义字体名字*/
+    src: url('./font-family/DS-DIGIT.ttf') format('truetype');
+    /*src 字体的加载路径，可以是绝对或相对URL。*/
+    /*format  字体的格式，主要用于浏览器识别，一般有以下几种——truetype,opentype,truetype-aat,embedded-opentype,avg等。*/
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    font-family: "黑体", "simHei";
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+}
+
+ol, ul, dl, dt, li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+input:focus, textarea:focus {
+    background-color: none;
+    outline: none !important;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+
+}
+
+table {
+    /*设置相邻单元格的边框间的距离*/
+    border-spacing: 0;
+    /*表格设置合并边框模型*/
+    border-collapse: collapse;
+}
+
+@media (min-width: 0px) {
+    body, html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1260px) {
+    body, html {
+        font-size: 1.0417vw;
+    }
+}
+
+.All_main {
+    opacity: 1;
+    animation: showpage 1s;
+}
+
+@keyframes showpage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+/*a:hover, a:visited, a:link{color: #000;}*/
+.letter_2 {
+    letter-spacing: 2em; /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（4-2）/(2-1)=2em */
+    margin-right: -2em; /*同上*/
+}
+
+.letter_3 {
+    letter-spacing: 0.5em; /*如果需要y个字两端对齐，则为(x-y)/(y-1),这里是（4-3）/(3-1)=0.5em */
+    margin-right: -0.5em; /*同上*/
+}
+
+/*只对谷歌浏览器有效*/
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: rgba(0, 0, 0, 0);
+}
+
+/*滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。*/
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/*滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。*/
+::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0);
+    display: none;
+}
+
+/*外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果*/
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+}
+
+/*内层轨道，滚动条中间部分*/
+::-webkit-scrollbar-thumb {
+    background-color: #009ee5;
+    border-radius: 6px;
+}
+
+/*滚动条里面可以拖动的那部分*/
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+/*边角*/
+::-webkit-resizer {
+}
+
+/*字体*/
+@font-face {
+    font-family: 'DS-DIGIT';/*自定义字体名字*/
+    src: url('./font-family/DS-DIGIT.ttf') format('truetype');
+    /*src 字体的加载路径，可以是绝对或相对URL。*/
+    /*format  字体的格式，主要用于浏览器识别，一般有以下几种——truetype,opentype,truetype-aat,embedded-opentype,avg等。*/
+
+}
